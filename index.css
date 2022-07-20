@@ -1,0 +1,249 @@
+body {
+  display: grid;
+  background-color: #ffdea9;
+  color: #805600;
+}
+
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  height: 1rem;
+  display: flex;
+}
+
+.headingdiv {
+  padding: 2.5rem;
+}
+
+.formatter {
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0% 5% 0% 5%;
+}
+
+.reachmeout {
+  margin: 10rem 2.5rem;
+}
+.reachmeout td {
+  padding: 2rem;
+  font-size: 2rem;
+}
+.reachmeout a {
+  outline: none;
+  text-decoration: none;
+  /* color: white; */
+}
+
+.stylisethisbutton {
+  background-color: #fffbf8;
+  padding: 1rem;
+  filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.stylisethisbutton:hover {
+  background-color: #b9dfa6;
+  padding: 1.5rem;
+  transition: 0.5s;
+  filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.actualresume {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: left;
+  align-items: left;
+  margin: 0rem 5% 2rem 5%;
+
+  height: fit-content;
+  background-color: #fffbf8;
+  font-size: 36px;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.skills-waale-blobs {
+  background-color: #fffbf8;
+  padding: 1rem;
+  border: 0.12rem solid black;
+  border-radius: 0.5rem;
+  color: black;
+  margin: 1rem;
+}
+.skills-waale-blobs:hover {
+  background-color: #ffdea9;
+  transition: 0.5s;
+}
+
+.skills-waale-blobs-ka-joda {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*
+Profile animation
+*/
+.profile {
+  animation: animatedcrossfade 1s;
+  border-radius: 25%;
+  max-width: 25rem;
+  border: 0.5rem solid #dfdce341;
+}
+@keyframes animatedcrossfade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.Projects {
+  background-color: #fffbf8;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0% 5% 5% 5%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  align-content: center;
+}
+
+.my-projects-heading {
+  padding: 2rem;
+  background-color: #ffeee1;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+.Project-Element {
+  border: 0.12rem solid black;
+  padding: 5rem;
+  margin: 2.5% 5%;
+  width: 80%;
+  max-width: fit-content;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.Project-Element img {
+  width: 100%;
+}
+.unbuilt-Project-Element {
+  border: 0.12rem solid black;
+  padding: 5rem;
+  margin: 2.5% 5%;
+  width: 80%;
+  max-width: fit-content;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.unbuilt-Project-Element img {
+  width: 100%;
+}
+.my-projects-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.projects-ka-joda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.projects-ka-joda img {
+  filter: grayscale(25%);
+}
+.projects-ka-joda img:hover {
+  filter: grayscale(0%);
+  transition: 1s;
+}
+
+/*
+typewriter animation.
+sauce:
+https://www.youtube.com/watch?v=w1nhwUGsG6M
+https://css-tricks.com/snippets/css/typewriter-effect/
+*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Media Queries:*/
+
+@media only screen and (max-width: 1250px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    flex-direction: column;
+  }
+  .headingdiv {
+    padding: 1rem;
+  }
+  .reachmeout {
+    margin: 2rem 2rem;
+  }
+  .reachmeout td {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .reachmeout a {
+    outline: none;
+    text-decoration: none;
+    /* color: white; */
+  }
+  .profile {
+    border: 0.5rem solid #dfdce371;
+  }
+}

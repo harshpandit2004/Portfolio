@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  background-color: #ffdea9;
+  color: #805600;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+body a{
+    color: #fc4a1a;
+    text-decoration: none;
+}
+body a:hover{
+    color: #803a00;
+    transition: 1s;
+}
+
+.intro,
+.mail,
+.request {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+}
+
+.request{
+    font-size: 1rem;
+}
