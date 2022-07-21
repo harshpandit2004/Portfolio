@@ -102,6 +102,7 @@ body {
 }
 .skills-waale-blobs:hover {
   background-color: #ffdea9;
+  filter: drop-shadow(0rem 0rem 0.15rem rgb(0, 0, 0));
   transition: 0.5s;
 }
 
@@ -119,7 +120,7 @@ Profile animation
   animation: animatedcrossfade 1s;
   border-radius: 25%;
   max-width: 25rem;
-  border: 0.5rem solid #dfdce341;
+  border: 0.5rem solid #ffffff8c;
 }
 @keyframes animatedcrossfade {
   from {
@@ -152,7 +153,7 @@ Profile animation
 }
 
 .Project-Element {
-  border: 0.12rem solid black;
+  border: 2px solid #00000000;
   padding: 5rem;
   margin: 2.5% 5%;
   width: 80%;
@@ -165,6 +166,12 @@ Profile animation
   flex-wrap: nowrap;
   align-content: center;
 }
+
+.Project-Element:hover{
+  transition: 2s;
+  border: .5rem solid #ffdea9;
+}
+
 .Project-Element img {
   width: 100%;
 }
