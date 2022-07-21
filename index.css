@@ -12,8 +12,19 @@ body {
 .subtitle {
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
-  height: 1rem;
-  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.subtitle::after{
+  content:"";
+  position: absolute;
+  right: -5px;
+  width: 1px;
+  height:75%;
+  border-right: 2px solid #805600 ;
+  animation: blink .75s infinite ease;
 }
 
 .headingdiv {
@@ -49,19 +60,18 @@ body {
 }
 
 .stylisethisbutton {
-  background-color: #fffbf8;
-  padding: 1rem;
-  filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
-  border-radius: 0.5rem;
+  background-color: #fffbf800;
+  padding: 20px 20px;
+  margin: 2rem;
   color: black;
 }
 
 .stylisethisbutton:hover {
-  background-color: #b9dfa6;
-  padding: 1.5rem;
-  transition: 0.5s;
+  background-color: #ffdea9;
+  padding: 20px 20px;
+  transition: .5s;
   filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
-  border-radius: 0.5rem;
+  border-radius: 50%;
   color: black;
 }
 
@@ -75,7 +85,7 @@ body {
 
   height: fit-content;
   background-color: #fffbf8;
-  font-size: 36px;
+  font-size: 24px;
 
   padding: 2rem;
   border-radius: 0.5rem;
@@ -84,7 +94,7 @@ body {
 .skills-waale-blobs {
   background-color: #fffbf8;
   padding: 1rem;
-  border: 0.12rem solid black;
+  border: none;
   border-radius: 0.5rem;
   color: black;
   margin: 1rem;
@@ -203,18 +213,12 @@ sauce:
 https://www.youtube.com/watch?v=w1nhwUGsG6M
 https://css-tricks.com/snippets/css/typewriter-effect/
 */
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
+@keyframes blink{
+  0%{
     opacity: 0;
   }
-  100% {
-    opacity: 0;
+  100%{
+    opacity: 1;
   }
 }
 
