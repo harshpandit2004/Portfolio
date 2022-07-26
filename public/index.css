@@ -168,8 +168,9 @@ Profile animation
 }
 
 .Project-Element:hover{
-  transition: 2s;
-  border: .5rem solid #ffdea9;
+  transition: .5s;
+  border: .25rem solid #ffdea9;
+  padding: 4.75rem;
 }
 
 .Project-Element img {
