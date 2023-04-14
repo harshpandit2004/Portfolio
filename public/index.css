@@ -1,6 +1,6 @@
 body {
   display: grid;
-  background-color: #ffda95;
+  background-color: #FFC251;
   color: #4E4637;
 }
 
@@ -25,7 +25,7 @@ Profile animation
 .title {
   font-family: "Ubuntu", sans-serif;
   font-size: 4rem;
-  color: #805600;
+  color: #402E32;
 }
 
 .subtitle {
@@ -34,7 +34,8 @@ Profile animation
   height: fit-content;
   width: fit-content;
   position: relative;
-  color: #805600;
+  color: #402E32;
+
 }
 
 .subtitle::after{
@@ -63,6 +64,7 @@ Profile animation
   display: flex;
   align-items: flex-start;
   width: 90%;
+  z-index: 2;
   margin: 0% 5% 0% 5%;
 }
 
@@ -84,12 +86,14 @@ Profile animation
   padding: 20px 20px;
   border-radius: 50%;
   margin: 2rem;
-  color: #4E4637;
+  color: #402E32;
 }
 
 .stylisethisbutton:hover {
-  background-color: #ffda95;
+  background-color: #FFC251;
   padding: 20px 20px;
+  width: 20px;
+  height: 20px;
   transition: .5s;
   filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
   border-radius: 50%;
@@ -103,14 +107,24 @@ Profile animation
   justify-content: left;
   align-items: left;
   margin: 0rem 5% 2rem 5%;
-
   height: fit-content;
-  background-color: #FFEECA;
-  font-size: 24px;
-
-  color: #4E4637;
+  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.2), rgba(255, 238, 202, 0.1));
+  backdrop-filter: blur(.5rem);
+  font-size: 36px;
+  font-family: 'Dongle', sans-serif;
+  color: #2d2920;
   padding: 2rem;
+  z-index: 2;
   border-radius: 0.5rem;
+}
+
+.resumelink{
+  all: unset;
+}
+.resumelink:hover{
+  all: unset;
+  transition: 0.25s;
+  color: #ff0000;
 }
 
 .skills-waale-blobs {
@@ -118,13 +132,8 @@ Profile animation
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
-  color: #4E4637;
   margin: 1rem;
-}
-.skills-waale-blobs:hover {
-  background-color: #ffda95;
   filter: drop-shadow(0rem 0rem 0.15rem rgb(0, 0, 0));
-  transition: 0.5s;
   color: #000000;
 }
 
@@ -135,9 +144,42 @@ Profile animation
   justify-content: space-around;
 }
 
+.project-redirect{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cicle1,.cicle2,.cicle3,.cicle4{
+  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.3), rgba(255, 238, 202, 0.1));
+  backdrop-filter: blur(.5rem);
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+.cicle1{
+  top: 125%;
+  right: 10%;
+}
+.cicle2{
+  bottom: -125%;
+  left: 7%;
+}
+.cicle3{
+  top: 25%;
+  right: 10%;
+}
+.cicle4{
+  bottom: -15%;
+  left: 7%;
+}
+
 .Projects {
   background-color: #FFEECA;
-  color: #4E4637;
+  color: #2d2920;
+  font-family: 'Dongle', sans-serif;
+  font-size: 36px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -148,6 +190,9 @@ Profile animation
   border-radius: 0.5rem;
   flex-direction: column;
   align-content: center;
+  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.2), rgba(255, 238, 202, 0.3));
+  backdrop-filter: blur(.5rem);
+  z-index: 2;
 }
 
 .my-projects-heading {
@@ -155,11 +200,10 @@ Profile animation
   color: #4E4637;
   background-color: #ffda95;
   border-radius: 2rem;
-  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .my-projects-heading:hover {
-  background-color: #ffda95;
   filter: drop-shadow(0rem 0rem 0.15rem rgb(0, 0, 0));
   transition: 0.5s;
   color: #000000;
@@ -179,6 +223,8 @@ Profile animation
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
+  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.3), rgba(255, 238, 202, 0.1));
+  backdrop-filter: blur(1rem);
 }
 
 .Project-Element:hover{
@@ -189,6 +235,18 @@ Profile animation
 
 .Project-Element img {
   width: 100%;
+}
+.Project-Element h2 {
+  font-size: 4rem;
+}
+.Project-Element h4 {
+  font-size: 2rem;
+}
+.project-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
 .unbuilt-Project-Element {
   border: 0.12rem solid black;
@@ -265,5 +323,10 @@ https://css-tricks.com/snippets/css/typewriter-effect/
   }
   .profile {
     border: 0.5rem solid #dfdce371;
+  }
+  .my-projects-heading {
+    filter: drop-shadow(0rem 0rem 0.15rem rgb(0, 0, 0));
+    transition: 0.5s;
+    color: #000000;
   }
 }
