@@ -1,7 +1,7 @@
 body {
   display: grid;
-  background-color: #FFC251;
-  color: #4E4637;
+  background-color: #ffc251;
+  color: #4e4637;
 }
 
 /*
@@ -11,7 +11,7 @@ Profile animation
   animation: animatedcrossfade 2s;
   border-radius: 25%;
   max-width: 25rem;
-  border: 0.5rem solid #FFEECA;
+  border: 0.5rem solid #ffeeca;
 }
 @keyframes animatedcrossfade {
   from {
@@ -25,7 +25,7 @@ Profile animation
 .title {
   font-family: "Ubuntu", sans-serif;
   font-size: 4rem;
-  color: #402E32;
+  color: #402e32;
 }
 
 .subtitle {
@@ -34,18 +34,17 @@ Profile animation
   height: fit-content;
   width: fit-content;
   position: relative;
-  color: #402E32;
-
+  color: #402e32;
 }
 
-.subtitle::after{
-  content:"";
+.subtitle::after {
+  content: "";
   position: absolute;
   right: -5px;
   width: 1px;
-  height:75%;
-  border-right: 2px solid #000000 ;
-  animation: blink .75s infinite ease;
+  height: 75%;
+  border-right: 2px solid #000000;
+  animation: blink 0.75s infinite ease;
 }
 
 .headingdiv {
@@ -86,15 +85,15 @@ Profile animation
   padding: 20px 20px;
   border-radius: 50%;
   margin: 2rem;
-  color: #402E32;
+  color: #402e32;
 }
 
 .stylisethisbutton:hover {
-  background-color: #FFC251;
+  background-color: #ffc251;
   padding: 20px 20px;
   width: 20px;
   height: 20px;
-  transition: .5s;
+  transition: 0.5s;
   filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
   border-radius: 50%;
   color: #2d2920;
@@ -108,27 +107,31 @@ Profile animation
   align-items: left;
   margin: 0rem 5% 2rem 5%;
   height: fit-content;
-  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.2), rgba(255, 238, 202, 0.1));
-  backdrop-filter: blur(.5rem);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 238, 202, 0.2),
+    rgba(255, 238, 202, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
   font-size: 36px;
-  font-family: 'Dongle', sans-serif;
+  font-family: "Dongle", sans-serif;
   color: #2d2920;
   padding: 2rem;
   z-index: 2;
   border-radius: 0.5rem;
 }
 
-.resumelink{
+.resumelink {
   all: unset;
 }
-.resumelink:hover{
+.resumelink:hover {
   all: unset;
   transition: 0.25s;
   color: #ff0000;
 }
 
 .skills-waale-blobs {
-  background-color: #FFEECA;
+  background-color: #ffeeca;
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -144,41 +147,63 @@ Profile animation
   justify-content: space-around;
 }
 
-.project-redirect{
+.project-redirect {
   text-align: center;
   font-size: 2.5rem;
 }
 
-.cicle1,.cicle2,.cicle3,.cicle4{
-  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.3), rgba(255, 238, 202, 0.1));
-  backdrop-filter: blur(.5rem);
+.cicle1,
+.cicle2,
+.cicle3,
+.cicle4 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 238, 202, 0.3),
+    rgba(255, 238, 202, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
   height: 20rem;
   width: 20rem;
   position: absolute;
   z-index: 1;
   border-radius: 50%;
 }
-.cicle1{
+.cicle1 {
   top: 125%;
-  right: 10%;
+  right: 3%;
 }
-.cicle2{
-  bottom: -125%;
-  left: 7%;
+.cicle2 {
+  bottom: -90%;
+  left: 2%;
 }
-.cicle3{
+.cicle3 {
   top: 25%;
-  right: 10%;
+  right: 4%;
 }
-.cicle4{
+.cicle4 {
   bottom: -15%;
   left: 7%;
 }
+.cicle3,
+.cicle2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 238, 202, 0.3),
+    rgba(255, 238, 202, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20%;
+}
+
 
 .Projects {
-  background-color: #FFEECA;
+  background-color: #ffeeca;
   color: #2d2920;
-  font-family: 'Dongle', sans-serif;
+  font-family: "Dongle", sans-serif;
   font-size: 36px;
   display: flex;
   flex-wrap: nowrap;
@@ -190,17 +215,21 @@ Profile animation
   border-radius: 0.5rem;
   flex-direction: column;
   align-content: center;
-  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.2), rgba(255, 238, 202, 0.3));
-  backdrop-filter: blur(.5rem);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 238, 202, 0.2),
+    rgba(255, 238, 202, 0.3)
+  );
+  backdrop-filter: blur(0.5rem);
   z-index: 2;
 }
 
 .my-projects-heading {
   padding: 2rem;
-  color: #4E4637;
+  color: #4e4637;
   background-color: #ffda95;
   border-radius: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .my-projects-heading:hover {
@@ -208,7 +237,6 @@ Profile animation
   transition: 0.5s;
   color: #000000;
 }
-
 
 .Project-Element {
   border: 2px solid #00000000;
@@ -223,13 +251,17 @@ Profile animation
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
-  background: linear-gradient(to right bottom, rgba(255, 238, 202, 0.3), rgba(255, 238, 202, 0.1));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 238, 202, 0.3),
+    rgba(255, 238, 202, 0.1)
+  );
   backdrop-filter: blur(1rem);
 }
 
-.Project-Element:hover{
-  transition: .5s;
-  border: .25rem solid #ffda95;
+.Project-Element:hover {
+  transition: 0.5s;
+  border: 0.25rem solid #ffda95;
   padding: 4.75rem;
 }
 
@@ -242,7 +274,7 @@ Profile animation
 .Project-Element h4 {
   font-size: 2rem;
 }
-.project-img{
+.project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -287,11 +319,11 @@ sauce:
 https://www.youtube.com/watch?v=w1nhwUGsG6M
 https://css-tricks.com/snippets/css/typewriter-effect/
 */
-@keyframes blink{
-  0%{
+@keyframes blink {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
